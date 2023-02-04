@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">STOPTeens</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Звязок</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Також:
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Різновиди програмування</a></li>
+                      <li><a class="dropdown-item" href="#">Додаткова інформація</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Щось іньше</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">В вітділі Також > Різновиди програмування - ви можете продивитися наші курси навчання</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Пошук</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      <!-- section hero -->
+      
+      <section class="hero">
+        <div class="container-sm">
+          <h1>Приєдуйтесь до навчання програмуванню у нас вже сьогодні</h1>
+           <!-- Button trigger modal -->
+      <button
+      type="button"
+      class="btn btn-outline-info"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      ПРИЄДНАТИСЯ
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Залиште свої контактні данні
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h2>Ведіть вашу електронну пошту</h2>
+            <input type="email"/>
+            <h2>Ведіть ваш номер телефону</h2>
+            <input type="tel"/>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Завершити
+            </button>
+            <button type="button" class="btn btn-primary">
+              Відправити
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./image/prog1.png"
+                  class="d-block w-100"
+                  alt="programing"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>програмування розвивается разом з технологіями світу</h5>
+                  <p>
+                    програмування едина професія яка потрібна для
+                    афтоматизування
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./image/prog2.png"
+                  class="d-block w-100"
+                  alt="programing2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Обовязковий результат з доказом</h5>
+                  <p>
+                    Після закінчення нашої школи ваша дитина отримае офіціальний
+                    сертифікат
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./image/prog3).png"
+                  class="d-block w-100"
+                  alt="programing3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>робота вільна від місця проживання</h5>
+                  <p>ви можете працювати буть де</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+             
+  </header>
+  <main>
+      </section>
+      <!-- section galery -->
+      <section class="galery">
+        <div class="container-sm">
+          <ul class="list-card">
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard.png" class="card-img-top" alt="progcard1">
+                    <div class="card-body">
+                      <p class="card-text">програмування легше ніж здается з першого погляду</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard2.png" class="card-img-top" alt="progcard2">
+                    <div class="card-body">
+                      <p class="card-text">програмістам легше знайти роботу до совго смаку</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard3.png" class="card-img-top" alt="progcard3">
+                    <div class="card-body">
+                      <p class="card-text">програмування це дуже цікаво, весело і також дуже корисно</p>
+                    </div>
+                  </div>
+            </li>
+            </ul>
+            <ul class="list-card2">
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard4.png" class="card-img-top" alt="progcard4">
+                    <div class="card-body">
+                      <p class="card-text">на програмуванні можливо добре заробляти</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard5.png" class="card-img-top" alt="progcard5">
+                    <div class="card-body">
+                      <p class="card-text">програмування має багато різних видів і щось 100% підійде для вас</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard6.png" class="card-img-top" alt="progcard6">
+                    <div class="card-body">
+                      <p class="card-text">ви можете поширювати свої роботи між іньшими</p>
+                    </div>
+                  </div>
+            </li>
+        </ul>
+        <ul class="list-card3">
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard7.png" class="card-img-top" alt="progcard7">
+                    <div class="card-body">
+                      <p class="card-text">ви можете створити цілу студію або компанію програмісті</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard8.png" class="card-img-top" alt="progcard8">
+                    <div class="card-body">
+                      <p class="card-text">програмування має необмежену кількисть можливостей</p>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/progcard9.png" class="card-img-top" alt="progcard9">
+                    <div class="card-body">
+                      <p class="card-text">програмування підійде як для вас так і для вашої дитини</p>
+                    </div>
+                  </div>
+            </li>
+        </ul>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              Що вам сподобалось найбільше з плюсів програмування?
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Нормальна зарплатня програмістів</a>
+            <a href="#" class="list-group-item list-group-item-action">Цікавість вичення програмування</a>
+            <a href="#" class="list-group-item list-group-item-action">Легкість отримання роботи за своїм смаком</a>
+            <a class="list-group-item list-group-item-action disabled">Якщо вам сподобалось щось із цого або щось іньше приеднуйтесь до навчання!</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-sm">
+        <h2 class="footer-text">Дякую за увагу!</h2>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
